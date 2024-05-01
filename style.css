@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap'); */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+.select{
+    display: flex;
+    flex-direction: column;
+}
+
+.contain{
+    position: relative;
+    left: 50%;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    background-color: #f3f3f3;
+    /* border-radius: 26px 26px 0 0; */
+    border-radius: 26px 26px 26px 26px;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+}
+
+.announce{
+    height: 180px;
+}
+
+.avatar img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* background-color: #1370e2; */
+    border-radius: 50%;
+    top: -60px;
+    transform: translateX(-50%);
+}
+
+.anounceVideo{
+    height: 300px;
+}
+
+.announceCenter{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+/* .announceCenter h3{
+    background-color: #ff0825;
+    margin-top: 1000px;
+} */
+
+
+.announce h1{
+    font-family: "Concert One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 35px;
+}
+
+.announce h3{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 100;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.announceCenter h3{
+    padding: 0;
+}
+
+.announce h3 span{
+    color: red;
+}
+
+.announceCenter .icon{
+    font-size: 6rem;
+}
+
+.option{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    background-color: black;
+}
+
+.option .option1{
+    background-color: #f8f4f5;
+    width: 100%;
+    padding: 20px 0 20px 0;
+    border-radius: 0 0 0 26px;
+    cursor: pointer;
+    user-select: none;
+    color: #ff0825;
+}
+
+.option .option2{
+    background-color: #f8f4f5;
+    width: 100%;
+    padding: 20px 0 20px 0; 
+    border-radius: 0 0 26px 0;
+    cursor: pointer;
+    color: #1370e2;
+    user-select: none;
+}
+
+.option .option1:hover, .option .option2:hover{
+    background-color: rgb(231, 231, 229);
+}
+
+.option .option1:active, .option .option2:active{
+    background-color: rgb(211, 211, 209);
+}
+
+.remove1,.remove2{
+    opacity: 0;
+}
